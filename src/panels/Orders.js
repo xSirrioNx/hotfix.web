@@ -102,7 +102,7 @@ const Orders = ({ order, orderStatuses, foodAreas, setFinishedOrder, setActiveOr
             <button
               className="Orders__cancel"
               onClick={() => {
-                setFinishedOrder({ itemId: order.shopId });
+                setFinishedOrder({ itemId: order.shopId, status: 'CANCELED' });
               }}
             >
               Отм.
